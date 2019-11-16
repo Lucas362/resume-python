@@ -3,7 +3,7 @@
 * `str.capitalize()`: retorna uma cópia da string com o primeiro caracter maiúsculo;
 
 * `str.center(width[, fillchar])`: retina uma string centralizada com o tamanha *width*. Ex:
-```
+```python
 string = "okok"
 string.center(25)
 Saída: '          okok           '
@@ -14,7 +14,7 @@ Saída: '@@@@@@@@@@okok@@@@@@@@@@@'
 ```
 
 * `str.count(sub[,start[,end]])`: conta as ocorrências de uma substring dentre da string. Ex:
-```
+```python
 str = 'teste de string'
 str.count('te')
 
@@ -22,7 +22,7 @@ Saída: 2
 ```
 
 * `str.decode([enconding[,errors]])`: Retorna o contrário do encode. Ex:
-```
+```python
 string = "this is a string example...wow!!!"
 string = string.encode('base64', 'strict')
 
@@ -40,13 +40,14 @@ Decoded String: this is string example....wow!!!
 * `str.endswith(suffix[,start[,end]])`: retorna `true` se a string terminar com o *suffix* e `false` caso contrário;
 
 * `str.expandtabs([tabsize])`: usa `\t` para tabular texto. Ex:
-```
+```python
 '01\t012\t0123\t01234'.expandtabs()
+
 Saída: '01      012     0123    01234'
 ```
 
 * `str.find(sub[,start[,end]])`: Menor index da substring `sub` na string (retorna -1 se não achar a substring na string). Ex:
-```
+```python
 str = 'teste de string'
 str.find('str')
 
@@ -54,7 +55,7 @@ Saída: 9
 ```
 
 * `str.format(*args, **kwargs)`: Formata a string. Ex:
-```
+```python
 "The sum of 1 + 2 is {0}".format(1+2)
 
 Saída: The sum of 1 + 2 is 3
@@ -81,7 +82,7 @@ Saída: The sum of 1 + 2 is 3
 * `str.lower()`: Retorna uma cópia da string com os caracteres minúsculos;
 
 * `str.lstrip([chars])`: Retorna uma cópia da string que está após o caracter escolhido. Ex: 
-```
+```python
 '   spacious   '.lstrip()
 Saída: 'spacious   '
 
@@ -90,7 +91,7 @@ Saída: 'example.com'
 ```
 
 * `str.partition(sep)`: Separa a string em um 3-tupla, na posição da primeira ocorrência de `sep` na string. Ex:
-```
+```python
 txt = "I could eat bananas all day"
 print(txt.partition("bananas"))
 
@@ -110,7 +111,7 @@ Saída: ('I could eat ', 'bananas', ' all day')
 * `str.rsplit([sep[,maxsplit]])`: Funciona como o `split([sep[, maxsplit]]])`, com a diferença do split à direita;
 
 * `str.rstrip([chars])`: Retorna uma cópia da string removendo a última ocorrência do caracter. Ex: 
-```
+```python
 '   spacious   '.rstrip()
 
 Saída: '   spacious'
@@ -128,7 +129,7 @@ Saída: 'mississ'
 * `str.startswith(prefix[,start[,end]])`: Retorna `true` caso a string comece com o `prefix`, e falso caso contrário;
 
 * `str.strip([chars])`: Remove os caracteres escolhidos da string. Ex: 
-```
+```python
 '   spacious   '.strip()
 
 Saída: spacious
