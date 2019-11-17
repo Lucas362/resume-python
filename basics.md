@@ -50,7 +50,7 @@ esultado = ['1' if numero % 5 == 0 else '0' for numero in range(16)]
 
 * `list.append(x)`: Adiciona item ao fim da lista;
 * `list.extend(iterable)`: Adiciona todos os itens do iterável *iterable* ao fim da lista. Ex:
-``` 
+```python
 lista1 = ['azul', 'amarelo']
 lista2 = ['vermelho', 'verde']
 lista1.extend(lista2) # lista1 = ['azul', 'amarelo', 'vermelho', 'verde']
@@ -61,6 +61,6 @@ lista1.extend(lista2) # lista1 = ['azul', 'amarelo', 'vermelho', 'verde']
 * `list.clear()`: remove todos os elementos da lista;
 * `list.index(x[, start[, end]]) ou list.index(x)`: retorna o índice do primeiro elemento cujo vlor seja x;
 * `list.count(x)`: retorna o número de vezes que o valor x aparece na lista;
-* `list.sort(key=None, reverse=False)`: ordena os itens da lista;
+* `list.sort(cmp=None, key=None, reverse=False)`: ordena os itens da lista;
 * `list.reverse()`: reverte os elementos da lista;
 * `list.copy()`: retorna uma lista com cópia dos elementos da lista de origem.
