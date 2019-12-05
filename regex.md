@@ -75,7 +75,7 @@ import re
 
 str = "The rain in Spain falls mainly in the plain!"
 
-#Check if the string contains "ai" followed by 1 or more "x" characters:
+# Check if the string contains "ai" followed by 1 or more "x" characters:
 
 x = re.findall("aix+", str)
 
@@ -90,17 +90,19 @@ Saída: []
 "No match"
 ```
 
-* `?`: Funciona como o ponto, mas desconsidera tudo o que está a esquerda. Ex:
+* `?`: Zero ou uma correpondências à esquerda. Ex:
 ```python
 import re
 
-str = "tocosono"
+str = "The rain in Spain falls mainly in the plain!"
 
-x = re.findall("t?cosono", str)
+# Check if the string contains "ai" followed by 0 or 1 "x" characters:
+
+x = re.findall("aix?", str)
 
 print(x)
 
-Saída: ['cosono']
+Saída: ['ai', 'ai', 'ai', 'ai']
 ```
 
 * `*?, +?, ??`: Os qualificadores `*`, `+` e `?` são ambiciosos, ou seja, correspondem a tantos textos quanto possível, com o acréscimo do `?` ao invés de retorna toda a string, retorna somente a correspondencia.
