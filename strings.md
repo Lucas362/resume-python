@@ -37,7 +37,7 @@ Decoded String: this is string example....wow!!!
 
 * `str.encode([encoding[, errors]])`: Retorna uma versão encode da string;
 
-* `str.endswith(suffix[,start[,end]])`: retorna `true` se a string terminar com o *suffix* e `false` caso contrário;
+* `str.endswith(suffix[,start[,end]])`: Retorna `true` se a string terminar com o *suffix*, e `false` caso contrário;
 
 * `str.expandtabs([tabsize])`: usa `\t` para tabular texto. Ex:
 ```python

@@ -450,8 +450,20 @@ print(x)
 
 Saída: ['ai', 'ai']
 ```
+* `finditer()`: Retorna um `iterator` que contém todos os `Match objects` (mais detalhes sobre `Match objects` mais a frente) correspondentes na string. Ex:
+```python
+import re
 
-* `search()`: Procura a string que corresponde e retorna um `Match object`. Se possuir mais de um match, retorna somente o primeiro. Ex:
+result = re.finditer('AV', 'AV Analytics Vidhya AV')
+
+for res in result:
+    print(res)
+
+Saída: <re.Match object; span=(0, 2), match='AV'>
+<re.Match object; span=(20, 22), match='AV'>
+```
+
+* `search()`: Procura a string que corresponde e retorna um `Match object` em qualquer lugar da string. Se possuir mais de um match, retorna somente o primeiro. Ex:
 ```python
 import re
 
@@ -478,6 +490,8 @@ Saída: "The first white-space character is located in position: 3"
     - span, 
     - start, 
     - string
+
+* `match()`: Funciona como o `search()`, porém busca a correspondência somente ao início da string.
 
 * `split()`: Retorna uma lista contendo a string que recebeu o `split`. Ex:
 ```python
